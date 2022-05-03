@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 700vh;
+}
+
+
+#first-section{
+    background-image: url(https://www.simbrella.com/site/assets/files/1040/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#first-section::before{
+    content: "";
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#first-section #custom-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-section #custom-container #card{
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-section #custom-container #nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+#first-section #custom-container #nav ul li{
+    margin-right: 15px;
+    list-style: none;
+}
+
+#first-section #custom-container #nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+#first-section #custom-container #nav ul li a:hover{
+    color: orange;
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: end;
+}
+
+.menu-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+#first-section .custom-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#first-section .custom-container #card{
+    width: 40%;
+    margin-left: 15%;
+    position: relative;
+}
+
+#first-section .custom-container #card .title h1{
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+    opacity: 1;
+}
+
+#first-section .custom-container #card .desc p{
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#first-section .custom-container #card .scroll{
+    position: absolute;
+    bottom: -130px;
+}
+
+#first-section .custom-container #card .scroll a{
+    text-decoration: none;
+    color: white;
+}
+
+#first-section .custom-container #card .scroll span{
+    margin-left: 10px;
+}
+
+@media (max-width:1007px){
+    #nav{
+        display: none;
+    }
+    #first-section{
+        background-position: 70% ;
+    }
+    #first-section .custom-container #card .scroll{
+        display: none;
+    }
+    #first-section .custom-container #card .title h1{
+        font-size: 21px;
+    }
+    #first-section .custom-container #card{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+}
+
+@media (min-width:1007px) {
+    .menu-bar{
+        display: none;
+    }
+}
